@@ -20,4 +20,7 @@ main = do
 	[ ("<XF86AudioRaiseVolume>", spawn "changeVolume.bash +")
         , ("<XF86AudioLowerVolume>", spawn "changeVolume.bash -")
         , ("<XF86AudioMute>", spawn "amixer sset Master toggle")
+	, ("<XF86AudioPlay>", spawn "banshee --toggle-playing")
+	, ("<XF86AudioNext>", spawn "banshee --next")
+	, ("<XF86AudioPrev>", spawn "banshee --previous")
 	]
